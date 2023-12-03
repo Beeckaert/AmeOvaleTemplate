@@ -1,0 +1,89 @@
+/* *Create By Systeme Rubis */
+
+/* *Re Utilisation du template Avec Otention d'un bon pour accort */
+
+/* Root Variable */
+
+body, header, [data-HeaderBand],
+[data-FullHeaderContent], [data-Cut50_50horizontal]{
+
+    /* Dimention */
+    --FullNumerSize: 100%;
+    --DefaultNumberSize: 0px;
+
+    /* Main Color Theme */
+    --MainColor1: #000000;
+    --MainColor2: #ffffff;
+
+}
+
+
+/* Main Element style */
+
+body{
+
+    background-color: var(--MainColor1);
+
+}
+
+/* Main Full Size */
+
+/* Header Style */ 
+
+/* Main Full Size = FullWidth */
+
+header, [data-HeaderBand], 
+[data-FullHeaderContent]{
+
+    width: var(--FullNumerSize);
+
+}
+
+/* Main Full Size = FullHeight */
+
+header, [data-FullHeaderContent], 
+[data-Cut50_50horizontal]{
+
+    height: var(--FullNumerSize);
+
+}
+
+/* Main Default Position */
+
+header, [data-HeaderBand],
+[data-FullHeaderContent], [data-Cut50_50horizontal]{
+
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+
+}
+
+/* set Element */
+
+/* set element in Header */
+
+/* HeadBand */
+
+[data-HeaderBand]{
+
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+/* FullHeaderContent  */
+
+[data-FullHeaderContent]{
+
+    height: calc(var(--FullNumerSize) - 70px);
+
+}
+
+/* Cut50_50horizontal */
+
+[data-Cut50_50horizontal]{
+
+    width: calc(var(--FullNumerSize) / 2);
+
+}
