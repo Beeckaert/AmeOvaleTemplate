@@ -33,7 +33,8 @@ body{
 /* Main Full Size = FullWidth */
 
 header, [data-HeaderBand], 
-[data-FullHeaderContent]{
+[data-FullHeaderContent],
+[data-MainLogosMainAPP]{
 
     width: var(--FullNumerSize);
 
@@ -42,7 +43,8 @@ header, [data-HeaderBand],
 /* Main Full Size = FullHeight */
 
 header, [data-FullHeaderContent], 
-[data-Cut50_50horizontal]{
+[data-Cut50_50horizontal],[data-LogosspaceContent], 
+[data-MainLogosMainAPP]{
 
     height: var(--FullNumerSize);
 
@@ -51,7 +53,8 @@ header, [data-FullHeaderContent],
 /* Main Default Position */
 
 header, [data-HeaderBand],
-[data-FullHeaderContent], [data-Cut50_50horizontal]{
+[data-FullHeaderContent], [data-Cut50_50horizontal], 
+[data-LogosspaceContent], [data-MainLogosMainAPP]{
 
     margin-top: 0px;
     margin-left: 0px;
@@ -68,7 +71,7 @@ header, [data-HeaderBand],
 [data-HeaderBand]{
 
     height: 50px;
-    margin-top: 20px;
+    border-top: 40px solid var(--MainColor1);
 
 }
 
@@ -76,7 +79,7 @@ header, [data-HeaderBand],
 
 [data-FullHeaderContent]{
 
-    height: calc(var(--FullNumerSize) - 70px);
+    height: calc(var(--FullNumerSize) - 90px);
 
 }
 
@@ -85,5 +88,96 @@ header, [data-HeaderBand],
 [data-Cut50_50horizontal]{
 
     width: calc(var(--FullNumerSize) / 2);
+
+}
+
+[data-LogosspaceContent]{
+
+    width: 250px;
+    margin-left: 10px;
+
+}
+
+
+[data-MainMenuButton]{
+
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+/* set Element Background Preview */
+
+[data-MainPreviewBackground]{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+[data-PieceMainBackground]{
+
+    width: 250px;
+    height: 250px;
+    margin: 0;
+    float: left;
+}
+
+[data-PieceMainBackgroundSRC]{
+
+    width: 250px;
+    height: 250px;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+
+}
+
+/* set id Element */
+
+#GetFullHeaderContentCutRight{
+
+    background-color: var(--MainColor2);
+
+}
+
+/* deco element */
+
+[data-whiteDeco]{
+
+    width: calc(var(--FullNumerSize) / 2);
+    height: 50px;
+    background-color: var(--MainColor2);
+    border-top: 40px solid var(--MainColor2);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+/* data Essay interface */
+
+[data-FULLparent]{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    float: left;
+
+}
+
+[data-50_50AbsoluteRight]{
+
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
 
 }
